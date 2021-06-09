@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.EmptyStackException;
+import java.util.Iterator;
 
 public class Stack<T> implements Iterable<T> {
     private LinkedList<T> list = new LinkedList<>();
@@ -31,6 +32,12 @@ public class Stack<T> implements Iterable<T> {
 
     public T peek() {
         if (isEmpty())
-            return null;
+            throw new EmptyStackException();
+        return list.peekLast();
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return list.iterator();
     }
 }
