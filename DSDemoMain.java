@@ -1,14 +1,10 @@
 // import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
 
-public class datastructure {
+public class DSDemoMain {
 
     public static void main(String[] args) {
-
-        System.out.println(
-                "Hello World. Below are the tests you can uncomment in order to see the behaviours of various data structure that we have defined in this project!");
-
-        // comment the code below to test for doubly linked list
-        testDoublyLinkedList();
+        // testDoublyLinkedList();
+        testBinarySearchTree();
 
     }
 
@@ -29,5 +25,16 @@ public class datastructure {
         System.out.println("family after adding scarlet has " + myFamilyList.size() + " people, they are "
                 + myFamilyList.toString());
 
+    }
+
+    public static void testBinarySearchTree(){
+        BinarySearchTreeNoNode bst = new BinarySearchTreeNoNode(4);
+        bst.insert(2);
+        bst.insert(45);
+        bst.insert(66);
+        bst.insert(3);
+        bst.remove(66);
+        System.out.println(bst.contains(3));
+        bst.printTree();
     }
 }

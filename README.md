@@ -6,7 +6,7 @@ This is a repository for self practices. It contains a set of data structures im
 
 ## Installation
 
-Clone this directory to your local machine. Uncomment the tests in the `main` class of `datastructure.java` to test and observe the behavior of various data structure implemented by this project.
+Clone this directory to your local machine. Uncomment the tests in the `main` class of `DSDemoMain.java` to test and observe the behavior of various data structure implemented by this project.
 
 ```java
 public static void main(String[] args) {
